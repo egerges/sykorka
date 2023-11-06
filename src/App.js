@@ -1,5 +1,9 @@
-import logo from './logo.png';
+import logo from './assets/img/logo.svg';
 import './App.css';
+
+import { Routes, Route } from 'react-router-dom';
+
+import routeslist from './router/router';
 
 function App() {
   return (
@@ -11,6 +15,15 @@ function App() {
           Get Excited with us.
         </p>
       </header>
+      <Routes>
+        {routeslist.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              Component={route.component}
+            />
+        ))}
+      </Routes>
     </div>
   );
 }
