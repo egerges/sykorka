@@ -8,6 +8,7 @@
   --p2: #F291D0;
   --p3: #F25EBF;
   --y1: #D9CF41;
+  --g1: #48494b;
 }
 
 @font-face {
@@ -24,14 +25,31 @@
 
 html, body {
   background-color: var(--w1);
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'groovy', 'Pacifico', cursive;
+  color: var(--p1);
+}
+
+h1 {
+  font-size: 3em;
 }
 
 body {
   font-family: 'poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--g1);
+}
+
+::selection {
+  background-color: var(--p1);
+  color: var(--w1);
+}
+
+::-moz-selection {
+  background-color: var(--p1);
+  color: var(--w1);
 }
