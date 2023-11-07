@@ -1,5 +1,5 @@
 // Import all components
-import Home from '../components/Home'
+import Home from '../pages/Home/Home'
 
 const routeslist = [
     { path: '/', component: Home }
