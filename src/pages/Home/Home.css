@@ -1,0 +1,96 @@
+.about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 5%; */
+}
+
+.about-section div {
+    height: 100%;
+    width: 33.33%;
+}
+
+.about-text {
+    text-align: center;
+    padding: 5%;
+    padding-top: 2px;
+}
+
+.student-img,
+.teacher-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.student-img {
+    left: -20px;
+}
+
+.teacher-img {
+    right: -20px;
+}
+
+.stars-img {
+    position: relative;
+    width: 35px;
+}
+
+#pink-star {
+    right: 200px;
+    bottom: 40px;
+}
+
+#yellow-star {
+    left: 200px;
+}
+
+.content-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bird {
+    width: 30%;
+    position: relative;
+    bottom: 80px;
+    left: 250px;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-section {
+        flex-direction: column-reverse;
+    }
+
+    .teacher-img {
+        display: none;
+    }
+
+    .content-holder,
+    .about-section div {
+        width: 100%;
+    }
+
+    .content-holder {
+        margin: 30px;
+    }
+
+    #pink-star {
+        right: 177px;
+        bottom: 13px;
+    }
+
+    #yellow-star {
+        left: 160px;
+        bottom: 20px;
+    }
+
+    .bird {
+        bottom: 50px;
+        left: 145px;
+    }
+}
